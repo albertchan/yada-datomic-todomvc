@@ -1,4 +1,4 @@
-# yada-datomic
+# yada-datomic-todomvc
 
 An implementation of the Todo Backend using Clojure, the yada web library, and
 Datomic.
