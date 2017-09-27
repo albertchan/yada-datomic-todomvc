@@ -39,6 +39,38 @@ running:
 dev> (seed)
 ```
 
+## API Resources
+
+#### Create a Todo
+
+Method:   POST
+Endpoint: `/api/todos`
+Example:
+
+```
+curl -i -H 'Content-Type:application/x-www-form-urlencoded' -X POST -d "title=Get+some+green+eggs+and+ham&completed=false" http://localhost:8000/api/todos
+```
+
+#### List Todos
+
+Method:   GET
+Endpoint: `/api/todos/<uuid>`
+Example:
+
+```
+curl -i -H "Accept:application/json" -H 'Content-Type:application/json' -X GET http://localhost:8000/api/todos
+```
+
+#### Update a Todo
+
+Method:   POST
+Endpoint: `/api/todos/<uuid>`
+Example:
+
+```
+curl -i -H 'Content-Type:application/x-www-form-urlencoded' -X PUT -d "title=Get+some+green+eggs+and+ham&completed=true" http://localhost:8000/api/todos/<uuid>
+```
+
 ## References
 
 - [Bidirectional URI routing](https://github.com/juxt/bidi)
