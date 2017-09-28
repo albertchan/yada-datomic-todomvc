@@ -85,9 +85,9 @@
   (do
     (println (todo/create-todo
               (database)
-              {:todo/title "Make a to do list"
-               :todo/completed true}))
+              {:title "Make a to do list"
+               :completed true}))
     (println (todo/create-todo
               (database)
-              {:todo/title "Cross off first item of to do list"
-               :todo/completed false}))))
+              {:title "Cross off first item of to do list"
+               :completed false}))))
