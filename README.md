@@ -48,7 +48,9 @@ Endpoint: `/api/todos`
 Example:
 
 ```
-curl -i -H 'Content-Type:application/x-www-form-urlencoded' -X POST -d "title=Get+some+green+eggs+and+ham&completed=false" http://localhost:8000/api/todos
+curl -i -H 'Content-Type:application/x-www-form-urlencoded' \
+     -X POST -d "title=Get+some+green+eggs+and+ham&completed=false" \
+     http://localhost:8000/api/todos
 ```
 
 #### List Todos
@@ -58,7 +60,8 @@ Endpoint: `/api/todos/<uuid>`
 Example:
 
 ```
-curl -i -H "Accept:application/json" -H 'Content-Type:application/json' -X GET http://localhost:8000/api/todos
+curl -i -H "Accept:application/json" -H 'Content-Type:application/json' \
+     -X GET http://localhost:8000/api/todos
 ```
 
 #### Update a Todo
@@ -68,7 +71,9 @@ Endpoint: `/api/todos/<uuid>`
 Example:
 
 ```
-curl -i -H 'Content-Type:application/x-www-form-urlencoded' -X PUT -d "title=Get+some+green+eggs+and+ham&completed=true" http://localhost:8000/api/todos/<uuid>
+curl -i -H 'Content-Type:application/x-www-form-urlencoded' \
+     -X PUT -d "title=Get+some+green+eggs+and+ham&completed=true" \
+     http://localhost:8000/api/todos/<uuid>
 ```
 
 ## References
