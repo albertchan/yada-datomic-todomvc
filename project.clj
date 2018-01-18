@@ -4,7 +4,8 @@
   :license {:name "Eclipse Public License"
             :url  "http://www.eclipse.org/legal/epl-v10.html"}
   :dependencies [[aero "1.1.2"]
-                 [org.clojure/clojure "1.8.0"]
+                 [org.clojure/clojure "1.9.0"]
+                 [org.clojure/core.async "0.4.474"]
                  [org.clojure/tools.namespace "0.2.11"]
                  [com.datomic/datomic-pro "0.9.5561.56"]
                  [com.stuartsierra/component "0.3.2"]

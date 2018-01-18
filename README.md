@@ -10,7 +10,8 @@ Datomic.
 - [Component](https://github.com/stuartsierra/component)
 - [yada](https://github.com/juxt/yada)
 
-Have a look in `project.clj` for a more complete list of the dependencies.
+Have a look in `project.clj` for a more complete list of the dependencies. This
+project was tested in an environment running Java version 1.8.0_152.
 
 ## Usage
 
